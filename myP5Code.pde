@@ -4,7 +4,7 @@ void setup() {
 }
 
 //🎯Varaible Declarations Go Here
-var x = 200;
+var x = 2;
 var y = 100;
 
 //🟢Draw Procedure - Runs on Repeat
@@ -23,8 +23,18 @@ void draw(){
   fill(255, 255, 255); // for the whites of the eyes!
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
-  
 
+  fill(0,0,0,255);
+  ellipse(x - 50, y - 50, 10, 10);//left pupil
+  ellipse(x + 50, y - 50, 10, 10);//right pupil
+  
+  fill(240,128,128, 255);
+  ellipse(x, y, 140, 40);//mouth
+
+x=mouseX
+y=mouseY
+
+  
 }
 
 
